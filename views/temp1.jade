@@ -1,0 +1,37 @@
+		//p hello
+		//block content
+	//
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		style(type='text/css')
+			body{
+			padding-top: 60px;
+			pading-bottom: 40px;
+			}
+		//link(href = '/stylesheets/bootstrap-responsive.css'  rel='stylesheet')
+
+//
+	body
+		div.navbar.navba-fixed-top(data-toggle='collapse' data-target='.nav-collapse')
+			div.navbar-inner
+				a.btn.btn-navbar
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.brand(href='/') Ifrogblog
+				div.nav-collage
+					ul.nav
+						li.active
+							a(href='/') 首页
+						li
+							a(href='/login')登入
+						li
+							a(href='reg')注册
+		div#container.container
+			block content
+			hr
+			footer
+				p
+					a(href='http://www.baidu.com/' target='_blank')Ifrog
+	script(src='/javascripts/jquery-1.8.0.js')
+	script(src='/javascripts/bootstrap.js')
+
